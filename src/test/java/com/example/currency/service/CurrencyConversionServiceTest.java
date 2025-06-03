@@ -91,7 +91,7 @@ public class CurrencyConversionServiceTest {
         assertEquals(eurRate, rates.get(1));
         verify(currencyService, never()).getCurrencyRateByAbbreviation(anyString());
     }
-
+    
     @Test
     public void testGetBulkRatesWithPartialCache() {
         List<String> abbreviations = Arrays.asList("USD", "EUR");
